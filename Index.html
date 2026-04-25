@@ -1,24 +1,73 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>WinnieSMP SECRET GAMES</title>
-  <link rel="stylesheet" href="style.css">
+    <title>Free Worldwide Games</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #0d0d0d;
+            color: white;
+        }
+
+        header {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            padding: 30px;
+        }
+
+        .game-card {
+            background: #1a1a1a;
+            padding: 15px;
+            border-radius: 12px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: 0.2s;
+            border: 2px solid transparent;
+        }
+
+        .game-card:hover {
+            transform: scale(1.05);
+            border-color: #00ff88;
+            background: #222;
+        }
+
+        .game-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .game-title {
+            margin-top: 10px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <h1>WELCOME</h1>
 
-  <div class="game-grid">
-    <a class="game-card" href="games/slope/">
-      <img src="assets/slope.png">
-      <p>Slope</p>
+<header>Free Worldwide Games</header>
+
+<div class="grid">
+
+    <a href="games/slope/index.html" class="game-card">
+        <img src="assets/slope.png" alt="Slope">
+        <div class="game-title">Slope</div>
     </a>
 
-    <a class="game-card" href="games/cookie-clicker/">
-      <img src="assets/cookie.png">
-      <p>Cookie Clicker</p>
-    </a>
+</div>
 
-    <!-- Add more games here -->
-  </div>
 </body>
 </html>
+
